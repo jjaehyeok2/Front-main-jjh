@@ -1,0 +1,30 @@
+.storage-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-item {
+  background-color: #2a2a2a;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+  width: 150px;
+}
+
+.image-item:hover {
+  background-color: #3a3a3a;
+}
+
+.image-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

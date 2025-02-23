@@ -1,17 +1,33 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  background-color: #111;
-  color: #f0c040;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: black;
+  color: gold;
+  cursor: default; /* 네비게이션 바 전체는 클릭되지 않도록 설정 */
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.8em;
   font-weight: bold;
+  cursor: pointer; /* 로고만 클릭 가능하도록 설정 */
 }
 
-.nav-links span {
-  margin-left: 15px;
+.logo:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
   cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
 }

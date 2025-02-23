@@ -1,0 +1,41 @@
+.image-generation {
+  display: flex; /* 가로 정렬 유지 */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  width: 100%;
+}
+
+/* 컨트롤 패널 (입력창 & 버튼) */
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  align-items: center;
+}
+
+/* 모델 & 스타일 선택 */
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* 이미지 출력 영역 */
+.generated-image-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
+}
+
+.generated-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}

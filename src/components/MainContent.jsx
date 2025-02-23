@@ -1,17 +1,17 @@
 import React from "react";
-import "./../styles/MainContent.css"; // 메인 콘텐츠 스타일 적용
+import ImageGeneration from "./ImageGeneration"; // 이미지 생성 컴포넌트
+import Storage from "./Storage"; // 보관함 컴포넌트
+import Board from "./Board"; // 게시판 컴포넌트
+import "../styles/MainContent.css";
 
-function MainContent() {
+const MainContent = ({ activeTab }) => {
   return (
     <div className="main-content">
-      <h1>KO-CLIP</h1>
-      <div className="example-prompts">
-        <div className="prompt-box">조선 시대 궁궐의 모습을 그려줘.</div>
-        <div className="prompt-box">전통 한복을 입은 사람들의 단풍놀이 장면을 보여줘.</div>
-        <div className="prompt-box">전통 사극에 나올 법한 왕과 왕비의 모습을 생성해줘.</div>
-      </div>
+      {activeTab === "이미지 생성" && <ImageGeneration />}
+      {activeTab === "보관함" && <Storage />}
+      {activeTab === "게시판" && <Board />}
     </div>
   );
-}
+};
 
 export default MainContent;

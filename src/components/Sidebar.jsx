@@ -1,23 +1,19 @@
 import React from "react";
 import "../styles/Sidebar.css";
 
-const Sidebar = () => {
-  const images = [
-    { id: 1, name: "이미지 1", src: "/assets/sample1.jpg" },
-    { id: 2, name: "이미지 2", src: "/assets/sample2.jpg" },
-    { id: 3, name: "이미지 3", src: "/assets/sample3.jpg" },
-  ];
-
+const Sidebar = ({ setActiveTab }) => {
   return (
     <div className="sidebar">
-      <h2 className="sidebar-title">보관함</h2>
-      <div className="image-list">
-        {images.map((img) => (
-          <div key={img.id} className="image-item">
-            <img src={img.src} alt={img.name} className="image-thumbnail" />
-            <p>{img.name}</p>
-          </div>
-        ))}
+      <div className="sidebar-menu">
+        <div className="menu-item" onClick={() => setActiveTab("이미지 생성")}>
+          🎨 이미지 생성
+        </div>
+        <div className="menu-item" onClick={() => setActiveTab("보관함")}>
+          📁 보관함
+        </div>
+        <div className="menu-item" onClick={() => setActiveTab("게시판")}>
+          🗂 게시판
+        </div>
       </div>
     </div>
   );

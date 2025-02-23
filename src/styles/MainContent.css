@@ -3,11 +3,6 @@
     color: #f0c040;
   }
   
-  .example-prompts {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* 버튼 간 간격 더 넓게 */
-  }
   
   .prompt-box {
     background-color: #222;

@@ -27,6 +27,9 @@
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
   gap: 30px;
   height: 700px; /* 세로 길이 추가 조정 */
+  margin-left: 260px;
+  margin-right: 260px;
+  width: calc(100% - 260px);
 }
 
 .control-panel {
